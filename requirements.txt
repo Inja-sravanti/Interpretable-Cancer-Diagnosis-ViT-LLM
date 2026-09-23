@@ -1,0 +1,15 @@
+numpy
+pandas
+matplotlib
+seaborn
+Pillow
+opencv-python
+ImageHash
+scikit-learn
+tensorflow
+torch
+torchvision
+transformers
+tqdm
+openai
+pydot

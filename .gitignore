@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets
+.env
+.env.*
+*.key
+
+# Data and model artefacts
+data/
+dataset/
+datasets/
+models/
+checkpoints/
+*.h5
+*.keras
+*.pt
+*.pth
+*.ckpt
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
