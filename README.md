@@ -40,6 +40,32 @@ The final notebook reports the following classification accuracies:
 | DenseNet121 | 96.80% |
 | ViT-Base | 95.60% |
 
+## Results & Explainability
+
+### Model Accuracy Comparison
+
+The three models were evaluated under the same experimental setup. DenseFormer-Histo achieved the highest classification accuracy in the final experiments.
+
+![Model Accuracy Comparison](Model_Accuracy_Comparison.png)
+
+### DenseFormer-Histo Confusion Matrix
+
+The confusion matrix below shows the classification performance of the DenseFormer-Histo model across the five lung and colon histopathology classes.
+
+![DenseFormer-Histo Confusion Matrix](DenseFormer_Confusion_Matrix.png)
+
+### Grad-CAM Visual Explanation
+
+Grad-CAM was used to highlight the image regions that contributed to the model's prediction. This provides a visual indication of where the model focused when analysing a histopathology image.
+
+![Grad-CAM Example](GradCAM_Example_1.png)
+
+### LLM-Based Explanation
+
+The prediction, confidence score and information derived from the Grad-CAM output were used to generate a short language-based explanation. The explanation is intended to improve the interpretability of the model output and is not a medical diagnosis.
+
+![LLM Explanation Example](LLM_Explanation_Example.png)
+
 These results are from the experimental setup recorded in the notebook and should be interpreted in the context of the augmented LC25000 dataset rather than as evidence of clinical performance.
 
 ## Explainability Pipeline
